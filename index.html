@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Typing Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="typing-box">
+            <h1>👩🏻‍💻 1 Minute Typing Game 👨🏻‍💻</h1>
+            <div class="start-screen">
+                <button class="button-82-pushable" role="button" onclick="startGame()">
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Start Game
+                    </span>
+                </button>
+            </div>
+            <div class="game-screen">
+                <div class="result">
+                    <p class="time-box">01:00</p>
+                    <p class="score">RESULT:0</p>
+                </div>
+
+                <div class="text-box">
+                    <p class="text"></p>
+                    <input type="text" name="" id="" oninput="check()">
+                </div>
+            </div>
+            <div class="end-screen">
+                <img src="typing.gif" alt="">
+                <h2>Game End</h2>
+                <p class="final-score"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
