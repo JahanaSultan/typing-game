@@ -7,14 +7,14 @@ let timerDisplay = document.querySelector('.time-box');
 let scoreDisplay = document.querySelector(".score")
 let final_score = document.querySelector(".final-score")
 let input = document.querySelector("input")
-let countdown = 1;
+let countdown = 60;
 let score = 0
 
 
 const startGame = () => {
     if (navigator.onLine) {
         score=0
-        countdown=1
+        countdown=60
         start_screen.classList.add("hide")
         game_screen.classList.add("show")
         end_screen.classList.remove("show")
