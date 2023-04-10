@@ -18,8 +18,8 @@ body {
 }
 
 .container .typing-box {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     background-color: #012663;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     position: relative;
@@ -72,6 +72,10 @@ body {
 .container .typing-box .end-screen p{
     color: #fff;
     font-size: 18px;
+}
+.container .typing-box .end-screen img{
+    width: 150px;
+    object-fit: contain;
 }
 
 .container .typing-box .show {
@@ -142,6 +146,7 @@ input {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-top: 30px;
 }
 
 .button-82-shadow {
@@ -223,4 +228,21 @@ input {
 
 .button-82-pushable:focus:not(:focus-visible) {
     outline: none;
+}
+
+
+@media screen and (max-width: 500px){
+    .container .typing-box{
+        width: 95%;
+        height: 95%;
+    }
+    .container .typing-box h1{
+        font-size: 1.5em;
+    }
+    input{
+        width: 80%;
+    }
+    .container .typing-box .game-screen p.time-box, .container .typing-box .game-screen p.score{
+        font-size: 20px;
+    }
 }
