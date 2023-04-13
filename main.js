@@ -18,6 +18,8 @@ const startGame = () => {
         start_screen.classList.add("hide")
         game_screen.classList.add("show")
         end_screen.classList.remove("show")
+        input.value = ""
+        scoreDisplay.innerHTML = `RESULT : ${score}`
         input.focus()
         word()
         startTimer()
